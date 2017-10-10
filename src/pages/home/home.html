@@ -10,11 +10,12 @@
 <ion-content padding>
   <h3>Enjoy Note</h3>
 
-  <!-- <ion-list>
-    <button ion-item *ngFor="let b of beers">
-      {{ b.name }}
+  <ion-list>
+    <button ion-item ngFor="beers">
+      {{ beers }}
+
     </button>
-  </ion-list> -->
+  </ion-list>
 
 
   <button ion-button primary (click)="goToCadastroPage()">Ir Para Cadastro</button>

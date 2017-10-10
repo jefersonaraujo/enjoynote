@@ -13,7 +13,7 @@ import 'rxjs/add/operator/map';
 export class HomePage {
 
   private  url:string = 'http://date.jsontest.com'; //Url de teste json api
-  public beers: Array<{}>;
+  public beers: Array<{}>;;
 
   constructor(
     public navCtrl: NavController,
@@ -23,10 +23,11 @@ export class HomePage {
     this.http.get(this.url)
              .map(res => res.json())
              .subscribe(data => {
-               console.log(data.time),
+               //console.log(data.time),
                this.beers = data;
              });
   }
+
   goToCadastroPage(){
     this.navCtrl.push(CadastroPage);
   }

@@ -77,10 +77,11 @@ var HomePage = (function () {
         this.http.get(this.url)
             .map(function (res) { return res.json(); })
             .subscribe(function (data) {
-            console.log(data.time),
-                _this.beers = data;
+            //console.log(data.time),
+            _this.beers = data;
         });
     }
+    ;
     HomePage.prototype.goToCadastroPage = function () {
         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__cadastro_cadastro__["a" /* CadastroPage */]);
     };
@@ -88,7 +89,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"E:\DESENVOLVIMENTO\enjoynote\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Enjoy Note</h3>\n\n  <!-- <ion-list>\n    <button ion-item *ngFor="let b of beers">\n      {{ b.name }}\n    </button>\n  </ion-list> -->\n\n\n  <button ion-button primary (click)="goToCadastroPage()">Ir Para Cadastro</button>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n  <button ion-button secondary menuToggle>{{ beers }}</button>\n</ion-content>\n'/*ion-inline-end:"E:\DESENVOLVIMENTO\enjoynote\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"E:\DESENVOLVIMENTO\enjoynote\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Enjoy Note</h3>\n\n  <ion-list>\n    <button ion-item ngFor="beers">\n      {{ beers }}\n\n    </button>\n  </ion-list>\n\n\n  <button ion-button primary (click)="goToCadastroPage()">Ir Para Cadastro</button>\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n  <button ion-button secondary menuToggle>{{ beers }}</button>\n</ion-content>\n'/*ion-inline-end:"E:\DESENVOLVIMENTO\enjoynote\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_http__["a" /* Http */]) === "function" && _b || Object])
 ], HomePage);
