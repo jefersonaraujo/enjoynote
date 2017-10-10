@@ -56,12 +56,6 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-/**
- * Generated class for the CadastroPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 var CadastroPage = (function () {
     function CadastroPage(navCtrl, navParams) {
         this.navCtrl = navCtrl;
@@ -76,9 +70,10 @@ CadastroPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
         selector: 'page-cadastro',template:/*ion-inline-start:"E:\DESENVOLVIMENTO\enjoynote\src\pages\cadastro\cadastro.html"*/'<ion-header>\n\n  <ion-navbar>\n    <ion-title>cadastro</ion-title>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n</ion-content>\n'/*ion-inline-end:"E:\DESENVOLVIMENTO\enjoynote\src\pages\cadastro\cadastro.html"*/,
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavParams */]) === "function" && _b || Object])
 ], CadastroPage);
 
+var _a, _b;
 //# sourceMappingURL=cadastro.js.map
 
 /***/ })
